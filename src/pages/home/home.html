@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
+  <audio #audioPlayer1 id="audio-player1" autoplay></audio>
+  <audio #audioPlayer2 id="audio-player2" autoplay></audio>
+
+  <label class="item item-input">
+      <span class="input-label">User ids</span>
+      <input type="text" [(ngModel)]="usersIds">
+  </label>
+
+  <button block (click)="startCall()">Call</button>
+  <button block (click)="stopCall()">Drop</button>
+</ion-content>
